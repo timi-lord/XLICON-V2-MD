@@ -1,6 +1,6 @@
 let handler = async (m, { conn, isAdmin, isBotAdmin, command, args }) => {
     if (!m.isGroup) return; 
-    if (!isAdmin) return m.reply('You must be an admin to use this command.');
+    if (!isAdmin) return m.reply('Tch,the peasants should make me admin first.');
     if (!isBotAdmin) return m.reply('I must be an admin to enable this feature.');
 
     let chat = global.db.data.chats[m.chat];
